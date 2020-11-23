@@ -1,0 +1,29 @@
+{% extends 'authorization/index.html' %}
+
+    {% block content %}
+    <h1 class="mt-4">Авторизация</h1>
+    <p><a href="/">Вернуться назад</a></p>
+
+            <form id="add_form" method="post">
+                {%csrf_token%}
+                {{form}}
+                <button form="add_form" type="submit" class="btn.btn-primary.mt-4">Добавить</button>
+            </form>
+
+{%endblock%}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1 class="mt-4">Авторизация</h1>-->
+<!--    <p><a href="/">Вернуться назад</a></p>-->
+
+<!--<form id="add_form" method="post">-->
+<!--                {%csrf_token%}-->
+<!--                {{form}}-->
+<!--                <button form="add_form" type="submit" class="btn.btn-primary.mt-4">Добавить</button>-->
+<!--</form>-->
+<!--</body>-->
